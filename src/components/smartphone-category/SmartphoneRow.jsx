@@ -3,7 +3,7 @@ import SmartphonePhones from './SmartphonePhones'
 
 const SmartphoneRow = () => {
   return (
-    <div className='my-3'>
+    <div className='my-24'>
       <CategoryHeader first='Grab the best deal' second='Smartphones' />
       <div class='items-center grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5 m-auto mt-5'>
         <SmartphonePhones

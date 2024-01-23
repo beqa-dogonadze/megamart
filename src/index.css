@@ -30,8 +30,9 @@ body {
   padding: 10px;
 }
 .swiper-slide img {
+  border: 2px solid #2ea2d4 !important;
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -47,6 +48,7 @@ body {
   background-color: white !important;
   padding: 10px;
   padding-right: 22px;
+  border: 1px solid #2ea2d4 !important;
   padding-left: 22px;
 
   height: max-content !important;

@@ -8,7 +8,7 @@ import CategoryHeader from '../CategoryHeader'
 import SliderItem from '../slider/SliderItem'
 const ElectronicsRow = () => {
   return (
-    <div className='my-6'>
+    <div className='my-24'>
       <CategoryHeader first='Top' second='Electonics brand' />
       <Swiper
         cssMode={true}
