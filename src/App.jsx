@@ -1,7 +1,11 @@
 import { Routes } from 'react-router-dom'
+import DailyEssentials from './components/daily-essentials/DailyEssentials'
+import ElectronicsRow from './components/electronics-brand/ElectronicsRow'
+import Footer from './components/footer/Footer'
 import Navigation from './components/nav/Navigation'
 import Slider from './components/slider/Slider'
 import SmartphoneRow from './components/smartphone-category/SmartphoneRow'
+import TopCategoriesRow from './components/top-categories/TopCategoriesRow'
 
 const App = () => {
   return (
@@ -15,7 +19,11 @@ const App = () => {
         </Routes>
         <Slider />
         <SmartphoneRow />
+        <TopCategoriesRow />
+        <ElectronicsRow />
+        <DailyEssentials />
       </div>
+      <Footer />
     </>
   )
 }

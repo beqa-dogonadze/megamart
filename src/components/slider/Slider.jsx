@@ -10,6 +10,7 @@ const Slider = () => {
     <div className='my-6'>
       <Swiper
         cssMode={true}
+        spaceBetween={30}
         navigation={true}
         pagination={true}
         mousewheel={true}

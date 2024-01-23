@@ -14,35 +14,46 @@ body {
   width: 100%;
   height: 100%;
 }
-
+.swiper-pagination-bullet-active {
+  background-color: #2ea2d4 !important;
+  width: 25px !important;
+  border-radius: 5px !important;
+}
+.swiper-pagination-bullet {
+  background-color: #2ea2d4 !important;
+  border-radius: 5px !important;
+}
+.swiper-pagination {
+  bottom: -3px !important;
+}
 .swiper-slide {
-  text-align: center;
-  font-size: 12px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
 }
-
 .swiper-slide img {
-  display: block;
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
-  border-radius: 20px;
-  padding: 0;
+  border-radius: 30px;
 }
-.swiper-button-next {
-  margin-right: -40px;
-  background-color: white;
-  border-radius: 50%;
-  padding: 42px;
-  color: gray;
+.swip-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
 }
+.swiper-button-next,
 .swiper-button-prev {
-  margin-left: -40px;
-  background-color: white;
   border-radius: 50%;
-  padding: 42px;
+  background-color: white !important;
+  padding: 10px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  height: max-content !important;
   color: gray;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px !important;
+  color: blue !important;
 }
