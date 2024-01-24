@@ -5,7 +5,7 @@ const SmartphoneRow = () => {
   return (
     <div className='my-24'>
       <CategoryHeader first='Grab the best deal' second='Smartphones' />
-      <div class='items-center grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5 m-auto mt-5'>
+      <div class='items-center flex flex-wrap gap-5 m-auto mt-5'>
         <SmartphonePhones
           img='https://alta.ge/images/thumbnails/270/250/detailed/300/iPhone_15_Pro_Max_Black_Titanium_PDP_Image_Position-1__ww-EN_mwco-03_ov3l-jm.jpg.jpg'
           name='Iphone 15 Pro'

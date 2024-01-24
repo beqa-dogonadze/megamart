@@ -5,16 +5,33 @@ const PopularCategory = () => {
     <section className='text-white text-start items-start'>
       <h1 className='py-3 border-b-2 border-white'>Most Popular Categories</h1>
       <ul className='list-disc flex flex-col gap-3 mt-6'>
-        <Link>Smartphones</Link>
-        <Link>Watches</Link>
-        <Link>Electronics</Link>
-        <Link>Vegetables</Link>
-        <Link>Shoes</Link>
-        <lLinki>Beauty</lLinki>
-        <Link>Kitchen</Link>
-        <Link>Sport</Link>
+        <li>
+          <Link to='/smartphones'>Smartphones</Link>
+        </li>
+        <li>
+          <Link to='/watches'>Watches</Link>
+        </li>
+        <li>
+          <Link to='/electronics'>Electronics</Link>
+        </li>
+        <li>
+          <Link to='/vegetables'>Vegetables</Link>
+        </li>
+        <li>
+          <Link to='/shoes'>Shoes</Link>
+        </li>
+        <li>
+          <Link to='/beauty'>Beauty</Link>
+        </li>
+        <li>
+          <Link to='/kitchen'>Kitchen</Link>
+        </li>
+        <li>
+          <Link to='/sport'>Sport</Link>
+        </li>
       </ul>
     </section>
   )
 }
+
 export default PopularCategory

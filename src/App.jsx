@@ -1,30 +1,30 @@
-import { Routes } from 'react-router-dom'
-import DailyEssentials from './components/daily-essentials/DailyEssentials'
-import ElectronicsRow from './components/electronics-brand/ElectronicsRow'
+import React from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/footer/Footer'
 import Navigation from './components/nav/Navigation'
-import Slider from './components/slider/Slider'
-import SmartphoneRow from './components/smartphone-category/SmartphoneRow'
-import TopCategoriesRow from './components/top-categories/TopCategoriesRow'
+import Home from './pages/Home'
+import SignIn from './pages/SignIn'
+import SmartphonePage from './pages/SmartphonePage'
+import WatchesPage from './pages/WatchesPage'
 
 const App = () => {
+  const location = useLocation()
+  const hideEl = location.pathname === '/signin'
+
   return (
     <>
-      <Navigation />
-      <div className='w-[80%] m-auto'>
+      {!hideEl && <Navigation />}
+      <div>
         <Routes>
-          {/* <Route path='/' element={<Home />} /> */}
-          {/* <Route path='projects' element={<Projects />} /> */}
-          {/* <Route path='about' element={<About />} /> */}
+          <Route path='/' element={<Home />} />
+          <Route path='/smartphones' element={<SmartphonePage />} />
+          <Route path='/watches' element={<WatchesPage />} />
+          <Route path='/signin' element={<SignIn />} />
         </Routes>
-        <Slider />
-        <SmartphoneRow />
-        <TopCategoriesRow />
-        <ElectronicsRow />
-        <DailyEssentials />
       </div>
-      <Footer />
+      {!hideEl && <Footer />}
     </>
   )
 }
+
 export default App
