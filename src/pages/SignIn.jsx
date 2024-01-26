@@ -67,9 +67,12 @@ const SignIn = () => {
             <label htmlFor=''>Remember me</label>
           </div>
         </form>
-        <button className='bg-[#008fcd] text-white rounded-3xl p-2 px-5 w-full'>
-          <Link to='/'>SIGN IN</Link>
-        </button>
+        <Link
+          to='/'
+          className='bg-[#008fcd] text-white rounded-3xl p-2 px-5 w-full'
+        >
+          <h1 className='text-center'>SIGN IN</h1>
+        </Link>
         <div>
           Already have an account?
           <Link to='/login' className='pl-1 text-[#008fcd] hover:underline'>

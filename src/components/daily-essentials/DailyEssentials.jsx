@@ -5,7 +5,7 @@ const DailyEssentials = () => {
   return (
     <div className='my-24'>
       <CategoryHeader first='Daily' second='Essentials' />
-      <div className='grid grid-cols-1 sm:grid-cols-2 w-full md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5 mt-5'>
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5 mt-5'>
         <DailyEssentialsItem
           img='https://5.imimg.com/data5/SELLER/Default/2023/9/344928632/OW/RQ/XC/25352890/yellow-mango-500x500.jpeg'
           name='Mango'

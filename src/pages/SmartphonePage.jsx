@@ -1,8 +1,4 @@
 const SmartphonePage = () => {
-  return (
-    <div>
-      sada
-    </div>
-  )
-} 
+  return <div>sada</div>
+}
 export default SmartphonePage

@@ -6,7 +6,14 @@ const SmartphoneRow = () => {
     <div className='my-24'>
       <CategoryHeader first='Grab the best deal' second='Smartphones' />
       <div class='flex justify-center mt-5'>
-        <div class='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 m-auto'>
+        <div class='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-4 m-auto'>
+          <SmartphonePhones
+            img='https://alta.ge/images/thumbnails/270/250/detailed/300/iPhone_15_Pro_Max_Black_Titanium_PDP_Image_Position-1__ww-EN_mwco-03_ov3l-jm.jpg.jpg'
+            name='Iphone 15 Pro'
+            price='2100'
+            save='500'
+            off='15'
+          />
           <SmartphonePhones
             img='https://alta.ge/images/thumbnails/270/250/detailed/300/iPhone_15_Pro_Max_Black_Titanium_PDP_Image_Position-1__ww-EN_mwco-03_ov3l-jm.jpg.jpg'
             name='Iphone 15 Pro'
