@@ -19,7 +19,7 @@ const Slider = () => {
         className='mySwiper'
       >
         <SwiperSlide>
-          <SliderItem img='https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fe93a557c-ae1e-446f-8955-30184dab6258_Thumb.png&w=1920&q=60' />
+          <SliderItem img='https://assets.dragonmart.ae//pictures/0103296_DragonMart_categorylisting_computer&electronics_1of3.jpeg' />
         </SwiperSlide>
         <SwiperSlide>
           <SliderItem img='https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F5ac904ab-86df-4b75-af20-fb7b2c4182af_Thumb.png&w=1920&q=60' />

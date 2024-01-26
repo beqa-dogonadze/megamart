@@ -1,10 +1,14 @@
 const SmartphonePhones = ({ img, name, price, save, off }) => {
   return (
-    <div className='rounded-2xl w-max border-2 border-gray-200 hover:border-[#008ecc]'>
-      <div className='rounded-t-2xl px-10 py-5 flex justify-between items-start relative'>
-        <img src={img} alt={name} width={220} />
-        <div className='bg-[#008ecc] w-max h-max rounded-tr-2xl p-2 rounded-bl-2xl absolute top-0 right-0'>
-          <h1 className='text-white w-[45px]'>{off}% OFF</h1>
+    <div className='rounded-2xl w-max border border-gray-200 hover:border-[#008ecc]'>
+      <div className='rounded-t-2xl px-7 py-5 flex justify-between items-start relative'>
+        <img
+          src={img}
+          alt={name}
+          className='w-[80px] sm:w-[80px] md:w-[140px] lg:w-[150px] 2xl:w-[200px]'
+        />
+        <div className='bg-[#008ecc] w-max h-max rounded-tr-2xl p-1 rounded-bl-2xl absolute top-0 right-0'>
+          <h1 className='text-white w-[40px]'>{off}%</h1>
         </div>
       </div>
       <div className='rounded-b-0 px-3'>

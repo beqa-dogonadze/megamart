@@ -4,10 +4,12 @@ import { IoCallSharp } from 'react-icons/io5'
 const Contact = () => {
   return (
     <section className='text-white flex flex-col gap-10'>
-      <h1 className='text-6xl text-white font-bold'>MegaMart</h1>
-      <div>
+      <h1 className='lg:text-6xl md:text-4xl sm:text-xl text-white font-bold'>
+        MegaMart
+      </h1>
+      <div className='gap-4 flex flex-col'>
         <h1>Contact Us</h1>
-        <div className='text-xl flex items-center gap-5'>
+        <div className='text-md md:text-xl lg:text-xl flex items-center gap-5'>
           <FaViber />
           <div>
             <h1>Whats App</h1>

@@ -6,7 +6,7 @@ import TopCategoriesRow from '../components/top-categories/TopCategoriesRow'
 
 const Home = () => {
   return (
-    <div className='w-[80%] m-auto'>
+    <div className='w-[90%] md:w-[80%] lg:w-[70%] m-auto'>
       <Slider />
       <SmartphoneRow />
       <TopCategoriesRow />

@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   margin: auto;
 }
@@ -28,35 +27,34 @@ body {
   bottom: -3px !important;
 }
 .swiper-slide {
-  padding: 10px;
+  padding: 6px;
 }
 .swiper-slide img {
-  border: 2px solid #2ea2d4 !important;
+  border: 2px solid white !important;
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: fill;
   border-radius: 30px;
 }
 .swip-slide img {
   width: 100%;
-  height: 200px;
+  height: 200px !important;
   object-fit: cover;
   border-radius: 30px;
+  border: 2px solid white;
 }
 .swiper-button-next,
 .swiper-button-prev {
   border-radius: 50%;
-  background-color: white !important;
+  background-color: #3f4142 !important;
   padding: 10px;
   padding-right: 22px;
-  border: 1px solid #2ea2d4 !important;
   padding-left: 22px;
-
   height: max-content !important;
   color: gray;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 25px !important;
-  color: blue !important;
+  color: #b1b2b8 !important;
 }
