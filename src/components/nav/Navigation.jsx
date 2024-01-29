@@ -1,17 +1,15 @@
 import NavigationLinks from './menu-search-singin/NavigationMenu'
 import Search from './menu-search-singin/Search'
 import SignInChart from './menu-search-singin/SignInChart'
-import NavigationItemsCategory from './navigation-link/NavigationItemsCategory'
 
 const Navigation = () => {
   return (
-    <header>
-      <div className='flex justify-between sticky top-0 w-[80%] m-auto items-center py-4'>
+    <header className='px-6 p-3 sticky top-0 z-50 bg-white border-b border-gray-300'>
+      <div className='flex justify-between items-center'>
         <NavigationLinks />
         <Search />
         <SignInChart />
       </div>
-      <NavigationItemsCategory />
     </header>
   )
 }

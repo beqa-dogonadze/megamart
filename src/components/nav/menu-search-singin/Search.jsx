@@ -1,21 +1,19 @@
 import { RiSearchLine } from 'react-icons/ri'
-import { TfiMenuAlt } from 'react-icons/tfi'
 
 const Search = () => {
   return (
-    <div>
-      <form className='flex items-center p-4 w-[500px] bg-[#f3f9fb]'>
-        <RiSearchLine className='mr-2 text-[#2ea2d4] text-xl' />
+    <form className='p-3 w-[500px] bg-white md:bg-[#f3fbfd] rounded-md'>
+      <div className='flex items-center justify-center md:justify-between'>
+        <RiSearchLine className='mr-2 text-[#2ea2d4] md:text-2xl text-3xl' />
         <input
-          className='flex-grow bg-[#f3f9fb]'
-          placeholder='Search essentials, groceries and more...'
+          className='flex-grow bg-[#f3f9fb] hidden md:block'
+          placeholder='Search electronics, groceries and more...'
           type='text'
           name='search'
           id='search'
         />
-        <TfiMenuAlt className='ml-2 text-[#2ea2d4] text-xl' />
-      </form>
-    </div>
+      </div>
+    </form>
   )
 }
 

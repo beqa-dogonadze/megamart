@@ -15,34 +15,30 @@ const SignIn = () => {
         <h1 className='text-2xl font-alice text-[#008fcd]'>REGISTER NOW!</h1>
         <form className='flex flex-col items-start justify-center gap-6'>
           <div className='flex flex-col'>
-            <label className='text-gray-400 w-[150px] select-none'>
-              Email Address
-            </label>
+            <label className='text-gray-400 select-none'>Email Address</label>
             <input
-              className='border border-gray-400 focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 w-96 p-3'
+              className='border border-gray-400 w-[300px] sm:w-[400px] focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 p-3'
               type='email'
               name='email'
             />
           </div>
           <div className='relative'>
-            <label className='text-gray-400 w-[150px] select-none'>
-              Password
-            </label>
+            <label className='text-gray-400 select-none'>Password</label>
             <div className='relative'>
               <input
-                className='border border-gray-400 focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 w-96 p-3 pr-10'
+                className='border border-gray-400 w-[300px] sm:w-[400px] focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 p-3 pr-10'
                 type='password'
                 name='password'
               />
             </div>
           </div>
           <div className='relative'>
-            <label className='text-gray-400 w-[150px] select-none'>
+            <label className='text-gray-400 select-none'>
               Confirm Password
             </label>
             <div className='relative'>
               <input
-                className='border border-gray-400 focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 w-96 p-3 pr-10'
+                className='border border-gray-400 w-[300px] sm:w-[400px] focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 p-3 pr-10'
                 type={hide ? 'password' : 'text'}
                 name='password'
               />

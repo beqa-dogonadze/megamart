@@ -5,7 +5,7 @@ const NavigationItems = ({ btnName, isSelected, onSelect, link }) => {
   return (
     <Link
       to={link}
-      className={`flex gap-2 p-2 items-center rounded-2xl ${
+      className={`flex gap-2 p-2 items-center text-center justify-center rounded-2xl ${
         isSelected
           ? 'bg-[#52b2dc] text-white'
           : 'bg-[#f3fbfd] hover:border-[#52b2dc] border text-black'

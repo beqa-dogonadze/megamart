@@ -10,19 +10,20 @@ import ToysAndSport from '../src/pages/toys-sport/ToysAndSport'
 import Footer from './components/footer/Footer'
 import Navigation from './components/nav/Navigation'
 import Welcome from './components/nav/Welcome'
+import NavigationItemsCategory from './components/nav/navigation-link/NavigationItemsCategory'
 import Home from './pages/Home'
 import SignIn from './pages/SignIn'
 import SmartphonePage from './pages/SmartphonePage'
 import WatchesPage from './pages/WatchesPage'
-
 const App = () => {
   const location = useLocation()
   const hideEl = location.pathname === '/signin'
 
   return (
-    <div className='flex flex-col'>
-      <Welcome />
+    <div>
+      {!hideEl && <Welcome />}
       {!hideEl && <Navigation />}
+      {!hideEl && <NavigationItemsCategory />}
       <div>
         <Routes>
           <Route path='/' element={<Home />} />
