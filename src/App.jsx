@@ -21,8 +21,8 @@ const App = () => {
 
   return (
     <div>
-      {!hideEl && <Welcome />}
       {!hideEl && <Navigation />}
+      {!hideEl && <Welcome />}
       {!hideEl && <NavigationItemsCategory />}
       <div>
         <Routes>

@@ -1,42 +1,64 @@
-import { useState } from 'react'
-import { IoClose } from 'react-icons/io5'
-import { TbMenuDeep } from 'react-icons/tb'
-
+import React, { useState } from 'react'
+import { IoClose, IoMenu } from 'react-icons/io5'
+import Modal from 'react-modal'
 import { Link } from 'react-router-dom'
 import NavDropDown from './NavDropDown'
-const NavigationLinks = () => {
-  const [isShown, setIsShown] = useState(false)
-  const [active, setActive] = useState(true)
 
-  const handleShow = () => {
-    setActive((event) => !event)
-    setIsShown((event) => !event)
+Modal.setAppElement('#root')
+
+//create search page and logic
+
+const NavigationMenu = () => {
+  const [modalIsOpen, setIsOpen] = useState(false)
+
+  const customStyles = {
+    content: {
+      left: '5px',
+      bottom: 'auto',
+      border: 'none',
+      borderRadius: '8px',
+      overflow: 'visible',
+      zIndex: 1000
+    },
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0)'
+    }
   }
+
+  function openModal() {
+    setIsOpen(!modalIsOpen)
+  }
+
+  function closeModal() {
+    setIsOpen(false)
+  }
+
   return (
-    <div className='flex gap-1 items-center'>
-      {active ? (
-        <button>
-          <TbMenuDeep
-            className={`bg-[#f3f9fb] text-7xl scale-x-[-1] rounded-xl text-[#2ea2d4]`}
-            onClick={handleShow}
-          />
+    <>
+      <div className='flex justify-between gap-6 items-center'>
+        <button
+          onClick={openModal}
+          className='text-blue-500 text-5xl'
+          style={{
+            transform: modalIsOpen ? 'rotate(270deg)' : 'rotate(0deg)',
+            transition: modalIsOpen ? '500ms' : '500ms'
+          }}
+        >
+          {!modalIsOpen ? <IoMenu /> : <IoClose />}
         </button>
-      ) : (
-        <button>
-          <IoClose
-            className={`bg-[#f3f9fb] text-7xl scale-x-[-1] rounded-xl text-[#2ea2d4]`}
-            onClick={handleShow}
-          />
-        </button>
-      )}
-      <Link
-        to='/'
-        className='text-[#2ea2d4] text-4xl font-bold hidden md:block'
+        <Link to='/' className='text-[#2ea2d4] text-sm md:text-4xl font-bold '>
+          MegaMart
+        </Link>
+      </div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
       >
-        MegaMart
-      </Link>
-      {isShown && <NavDropDown />}
-    </div>
+        <NavDropDown />
+      </Modal>
+    </>
   )
 }
-export default NavigationLinks
+
+export default NavigationMenu

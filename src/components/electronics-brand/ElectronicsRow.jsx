@@ -34,9 +34,6 @@ const ElectronicsRow = () => {
           <SliderItem img='https://www.dealcorner.in/uploads/productimage/large/14443_1.jpg' />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderItem img='https://cdn-files.kimovil.com/deal_screenshot/0009/44/thumb_843412_deal_screenshot_x_big.png' />
-        </SwiperSlide>
-        <SwiperSlide>
           <SliderItem img='https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fa79f7b7e-b80a-4f2c-8c06-1231a61d173b_Thumb.png&w=1920&q=60' />
         </SwiperSlide>
         <SwiperSlide>

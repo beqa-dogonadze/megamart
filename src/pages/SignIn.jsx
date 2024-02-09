@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { FaRegEyeSlash } from 'react-icons/fa'
 import { IoEyeOutline } from 'react-icons/io5'
-import { Link } from 'react-router-dom'
 
 const SignIn = () => {
   const [hide, setHide] = useState(true)
   const handleVisibility = () => {
     setHide((prevHide) => !prevHide)
   }
+
+  const validateEmail = (email) =>
+    /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(email)
 
   return (
     <div className='w-full h-[100vh] flex flex-col items-center my-32 m-auto bg-white'>
@@ -21,22 +23,22 @@ const SignIn = () => {
               type='email'
               name='email'
             />
+            <span id='emailError'>{validateEmail ? 'none' : 5}</span>
           </div>
-          <div className='relative'>
+          <div className='flex flex-col '>
             <label className='text-gray-400 select-none'>Password</label>
-            <div className='relative'>
-              <input
-                className='border border-gray-400 w-[300px] sm:w-[400px] focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 p-3 pr-10'
-                type='password'
-                name='password'
-              />
-            </div>
+            <input
+              className='border border-gray-400 w-[300px] sm:w-[400px] focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 p-3 pr-10'
+              type='password'
+              name='password'
+            />
+            <span id='passwordError'>sad</span>
           </div>
           <div className='relative'>
             <label className='text-gray-400 select-none'>
               Confirm Password
             </label>
-            <div className='relative'>
+            <div className='relative flex flex-col'>
               <input
                 className='border border-gray-400 w-[300px] sm:w-[400px] focus:outline-none focus:border-2 focus:border-[#008fcd] rounded-md h-10 p-3 pr-10'
                 type={hide ? 'password' : 'text'}
@@ -54,6 +56,7 @@ const SignIn = () => {
                 />
               )}
             </div>
+            <span id='Password'>test</span>
           </div>
           <div className='flex items-center gap-2'>
             <input
@@ -63,17 +66,17 @@ const SignIn = () => {
             <label htmlFor=''>Remember me</label>
           </div>
         </form>
-        <Link
-          to='/'
+        <button
+          onClick={validateEmail}
           className='bg-[#008fcd] text-white rounded-3xl p-2 px-5 w-full'
         >
           <h1 className='text-center'>SIGN IN</h1>
-        </Link>
+        </button>
         <div>
           Already have an account?
-          <Link to='/login' className='pl-1 text-[#008fcd] hover:underline'>
+          <button className='pl-1 text-[#008fcd] hover:underline'>
             Log in
-          </Link>
+          </button>
         </div>
       </div>
     </div>

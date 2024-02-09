@@ -11,7 +11,7 @@ const SignInChart = () => {
           className='font-bold text-gray-500 hover:text-[#2ea2d4] flex gap-2'
         >
           <FiUser className='text-[#2ea2d4] text-2xl ' />
-          Sign In
+          <h1 className='hidden sm:block'>Sign In</h1>
         </Link>
       </div>
       <div className='flex items-center gap-2 px-2'>
@@ -20,7 +20,7 @@ const SignInChart = () => {
           className='font-bold text-gray-500 hover:text-[#2ea2d4] flex gap-2'
         >
           <BsCart2 className='text-[#2ea2d4] text-2xl ' />
-          Cart
+          <h1 className='hidden sm:block'> Cart</h1>
         </Link>
       </div>
     </div>
